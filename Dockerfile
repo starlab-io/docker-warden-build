@@ -5,7 +5,7 @@ MAINTAINER David Esler <david@starlab.io>
 RUN apt-get update && \
     apt-get --quiet --yes install \
         clang-3.7 clang-format-3.7 \
-        python3.5 python3.5-dev python3-pip \
+        python3.5 python3.5-dev python3-pip && \
         apt-get autoremove -y && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
